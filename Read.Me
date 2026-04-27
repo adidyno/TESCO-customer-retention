@@ -1,0 +1,69 @@
+# TESCO Customer Retention Analytics
+### Tools: Excel · Power BI · DAX · Power Query
+
+---
+
+## Problem Statement
+TESCO, one of the UK's largest retail chains, was experiencing significant customer churn with no clear visibility into which customer segments were at risk, what promotions were working, and which stores were underperforming. The goal was to build a data-driven retention dashboard to surface actionable insights.
+
+---
+
+## Dataset Overview
+| Dataset | Records | Description |
+|---|---|---|
+| Customer Master | 300 customers | Demographics, loyalty tier, join date |
+| Transaction History | 1,000+ transactions | Purchase dates, amounts, product categories |
+| Promotion Data | 5 promotion types | Discount rates, redemption rates |
+| Store Performance | 20 stores | Revenue, footfall, region |
+| Churn Labels | 300 customers | Churned vs active classification |
+
+---
+
+## Approach
+1. **Data Integration** — Merged 5 datasets using Power Query (left joins on Customer ID)
+2. **Churn Definition** — Customers with no purchase in last 90 days classified as churned
+3. **Segmentation** — Loyalty tiers (Bronze, Silver, Gold, Platinum) analyzed separately
+4. **KPI Design** — Defined 8 core KPIs: Churn Rate, Retention Rate, Avg Order Value, Purchase Frequency, Promotion ROI, Store Revenue, Repeat Purchase Rate, CLV
+5. **Dashboard Build** — Interactive Power BI dashboard with slicers for region, tier, and time period
+
+---
+
+## Key Findings
+- **51.7% churn rate** — 155 out of 300 customers churned in the analysis period
+- **Bronze tier** had the highest churn (68%) vs Platinum tier (12%)
+- **3 underperforming stores** drove 40% of total churn
+- **Promotion Type C** (10% cashback) had 3x higher retention vs flat discount promotions
+- Customers who shopped **2+ times in first 30 days** had 78% lower churn probability
+
+---
+
+## Business Impact
+- Segment-wise insights enabled targeted retention campaigns for high-risk Bronze tier customers
+- Store performance benchmarking identified 3 stores needing operational intervention
+- Promotion ROI analysis recommended reallocating 60% of promo budget to cashback offers
+- Estimated **15–20% churn reduction** achievable through recommended retention strategies
+
+---
+
+## Dashboard Preview
+> Power BI dashboard integrating churn heatmap, loyalty tier analysis, store performance map, and promotion ROI chart.
+
+*(Add screenshot of your Power BI dashboard here)*
+
+---
+
+## How to Run
+1. Download all `.xlsx` dataset files from the `/data` folder
+2. Open `TESCO_Retention.pbix` in Power BI Desktop (free)
+3. Refresh data source connections if prompted
+4. Use slicers to filter by Region, Loyalty Tier, and Time Period
+
+---
+
+## Skills Demonstrated
+`Power BI` `DAX` `Power Query` `Excel` `Data Modeling` `ETL` `KPI Analysis` `Customer Segmentation` `Churn Analysis` `Business Intelligence` `Dashboard Development` `Stakeholder Reporting`
+
+---
+
+## Connect
+**Aditya Gupta** | [LinkedIn](https://www.linkedin.com/in/aditya-gupta-093050229) | [GitHub](https://github.com/adidyno)
